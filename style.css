@@ -1,1 +1,92 @@
+/* 181924 middle rgb( 24, 25, 36)
+/* 333541 light rgb(51,53, 65)
+/* 080915 dark  rgb(8, 9, 21) */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
 
+html {
+  /* This is the root selector */
+  font-size: 62.5%; }
+
+body {
+  background: white;
+  padding: 2rem;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  line-height: 1.5;
+  box-sizing: border-box; }
+
+/**** Start of header ****/
+.header {
+  height: 95vh;
+  background-image: linear-gradient(rgba(51, 53, 65, 0.5), rgba(8, 9, 21, 0.5)), url(./img/asianbowl.jpg);
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  /* Reference for the positioning of the logo */ }
+
+.header__logo-area {
+  position: absolute;
+  top: 1rem;
+  left: 1rem; }
+
+.header__logo {
+  height: 30rem; }
+
+.header__text-box {
+  position: absolute;
+  text-align: center;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.heading-title {
+  color: white; }
+
+.heading-title--main {
+  display: block;
+  font-size: 6rem;
+  letter-spacing: 0.8rem;
+  animation-name: fadeIn;
+  animation-duration: 4s; }
+
+.heading-title--comment {
+  display: block;
+  font-size: 3.5rem;
+  letter-spacing: 0.2rem;
+  animation-name: fadeIn;
+  animation-duration: 4s; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  display: inline-block;
+  margin-top: 3rem;
+  font-weight: bolder;
+  transition: 0.5s; }
+
+.btn--color {
+  background-color: white;
+  color: #080915;
+  font-size: 1.5rem; }
+
+.btn:hover {
+  background: green;
+  /* transition: 1s; */
+  transform: scale(1.5); }
+
+/**** /End of header ****/

@@ -2,6 +2,13 @@
 /* 333541 light rgb(51,53, 65)
 /* 080915 dark  rgb(8, 9, 21) */
 
+$color-middle: rgb( 24, 25, 36);
+$color-light: rgb(51,53, 65);
+$color-dark: rgb(8, 9, 21);
+$color-black: black;
+
+
+
 *,
 *::after,
 *::before {
@@ -17,7 +24,7 @@ html { /* This is the root selector */
 body {
     background: white;
     padding: 2rem;
-    color: black;
+    color: $color-black;
     font-family: 'Open Sans', sans-serif;
     font-weight: lighter;
     line-height: 1.5;
@@ -29,32 +36,31 @@ body {
 .header { 
     height: 95vh;
     background-image: linear-gradient( 
-        rgba(51, 53, 65, 0.5), 
-        rgba(8, 9, 21, 0.5) ),
+        rgba($color-light, 0.5), 
+        rgba($color-dark, 0.5),
         url(./img/asianbowl.jpg);  
     background-size: cover;
     background-position: bottom;
     position: relative; /* Reference for the positioning of the logo */
-}
 
-.header__logo-area {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-}
+    &__logo-area {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+    }
 
-.header__logo {
-    height: 30rem;
+    &__logo {
+        height: 30rem;
+    }
+    
+    &__text-box {
+        position: absolute;
+        text-align: center;
+        top: 45%;
+        left:50%;
+        transform: translate(-50%, -50%);
+    }
 }
-
-.header__text-box {
-    position: absolute;
-    text-align: center;
-    top: 45%;
-    left:50%;
-    transform: translate(-50%, -50%);
-}
-
 
 .heading-title {
     color: white;
@@ -99,7 +105,7 @@ body {
 
 .btn--color {
     background-color:white;
-    color: rgb(8, 9, 21);
+    color: rgb($color-dark);
     font-size: 1.5rem;
 }
 

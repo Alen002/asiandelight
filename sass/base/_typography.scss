@@ -1,0 +1,28 @@
+.heading-title {
+    color: white;
+
+    &--main {
+        display: block;
+        font-size: 6rem;
+        letter-spacing: 0.8rem;
+        animation-name: fadeIn;
+        animation-duration: 4s;
+    }
+    
+    &--comment {
+        display: block;
+        font-size: 3.5rem;
+        letter-spacing: 0.2rem;
+        animation-name: fadeIn;
+        animation-duration: 4s;
+    }
+}
+
+body {
+    background: white;
+    padding: 2rem;
+    color: $color-black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    line-height: 1.5;
+}

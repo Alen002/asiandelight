@@ -1,0 +1,25 @@
+.btn {
+    &:link, 
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1rem 3rem;
+        border-radius: 2rem;
+        display: inline-block;
+        margin-top: 3rem;
+        font-weight: bolder;
+        transition: 0.5s;
+    }
+
+    &--color {
+        background-color:white;
+        color: $color-dark;
+        font-size: 1.5rem;
+    }
+    
+    &:hover {
+        background: $color-green;
+        /* transition: 1s; */
+        transform: scale(1.5)   
+    }
+}
